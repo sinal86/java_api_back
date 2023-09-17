@@ -37,7 +37,7 @@ public class PostRequests extends AbstractTest
     {
         RestAssured.given().spec(getRequestSpecification())
                 .expect()
-                .body("cuisine", Matchers.equalTo("Italian"))
+                .body("cuisine", Matchers.equalTo("Mediterranean"))
                 .when()
                 .post(getBaseUrl() + "recipes/cuisine")
                 .then()
